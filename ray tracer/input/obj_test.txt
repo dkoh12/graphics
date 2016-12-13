@@ -1,0 +1,26 @@
+#basic cam config
+#cam 0 0 -1 -1 -1 -3 1 -1 -3 -1 1 -3 1 1 -3
+
+#teapot cam config
+cam 1 1 -4 -3 -3 -3 3 -3 -3 -3 3 -3 3 3 -3
+
+#obj ../input/simpleTri.obj
+#mat 0.1 0.1 0.1 1 0 1 1 1 1 50 0 0 0
+
+#obj ../input/flattriangle.obj
+#mat 0.1 0.1 0.1 1 0 1 1 1 1 50 0 0 0
+
+#obj ../input/diamond.obj
+#mat 0.1 0.1 0.1 1 0 1 1 1 1 50 0 0 0
+
+obj ../input/teapot.obj
+mat 0.1 0.1 0.1 1 0 1 1 1 1 50 0 0 0
+
+#obj ../input/teddybear.obj
+#mat 0.1 0.1 0.1 1 0 1 1 1 1 50 0 0 0
+
+#obj ../input/pumpkin.obj
+#mat 0.1 0.1 0.1 1 0 1 1 1 1 50 0 0 0
+
+ltd 0.57735027 0.57735027 0.57735027 1 0 1
+ltd 0.57735027 0.57735027 -0.57735027 1 1 0

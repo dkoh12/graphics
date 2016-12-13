@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://arma.sourceforge.net/faq.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta content="text/html;" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="http://arma.sourceforge.net/img/armadillo_icon.png" type="image/png">
+  <link type="text/css" rel="stylesheet" href="./Armadillo_ C++ linear algebra library_files/style.css">
+  <title>Armadillo: C++ linear algebra library</title>
+
+<script type="text/javascript" async="" src="./Armadillo_ C++ linear algebra library_files/ga.js"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20358374-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+
+<div id="arma_header">
+<div id="arma_header_row">
+  <div id="arma_header_cell_logo_img"><a href="http://arma.sourceforge.net/"><img id="arma_logo_img" src="./Armadillo_ C++ linear algebra library_files/armadillo_logo.png" alt="armadillo" align="top" border="0"></a></div>
+  <div id="arma_header_spacer"></div>
+  <div id="arma_header_cell_logo_txt"><big><big><b>Armadillo</b></big><br>C++ linear algebra library</big></div>
+</div>
+</div>
+
+<div id="arma_menu">
+  <ul class="arma_menu">
+  <li class="arma_menu"><a class="arma_menu" href="http://arma.sourceforge.net/">About</a></li>
+  <li class="arma_menu"><a class="arma_menu_selected" href="http://arma.sourceforge.net/faq.html">Questions</a></li>
+  <li class="arma_menu"><a class="arma_menu" href="http://arma.sourceforge.net/docs.html">Documentation</a></li>
+  <li class="arma_menu"><a class="arma_menu" href="http://arma.sourceforge.net/speed.html">Speed</a></li>
+  <li class="arma_menu"><a class="arma_menu" href="http://arma.sourceforge.net/contact.html">Contact</a></li>
+  <li class="arma_menu"><a class="arma_menu" href="http://arma.sourceforge.net/download.html">Download</a></li>
+  </ul>
+</div>
+
+<div id="arma_content">
+
+<!-- CONTENT BEGIN -->
+
+<div style="text-align: justify;">
+Jump to:
+<ul>
+<li><a href="http://arma.sourceforge.net/faq.html#bugreports">Bug Reports</a></li>
+<li><a href="http://arma.sourceforge.net/faq.html#citation">Citation</a></li>
+<li><a href="http://arma.sourceforge.net/faq.html#license">License</a></li>
+<li><a href="http://arma.sourceforge.net/faq.html#linking">Linking</a></li>
+<li><a href="http://arma.sourceforge.net/faq.html#speed">Speed</a></li>
+<li><a href="http://arma.sourceforge.net/faq.html#development">Development</a></li>
+<li><a href="http://arma.sourceforge.net/faq.html#features">Features</a></li>
+<li><a href="http://arma.sourceforge.net/faq.html#related">Related Software</a></li>
+<li><a href="http://arma.sourceforge.net/faq.html#misc">Miscellaneous</a></li>
+</ul>
+<br>
+
+<hr class="greyline">
+<a name="bugreports"></a>
+<br>
+<b>Bug Reports</b>
+<ul>
+<p>
+</p><li><b>I found a possible bug in the code and/or documentation. How do I report it&nbsp;?</b>
+<br>Please make a <i>small self-contained program</i> which exposes the bug,
+and then send the corresponding source code to the <a href="http://arma.sourceforge.net/contact.html">developers</a>.
+<br>We appreciate your time to make a bug report.
+</li>
+<p></p>
+</ul>
+<br>
+
+<hr class="greyline">
+<a name="citation"></a>
+<br>
+<b>Citation</b>
+<ul>
+<p>
+</p><li>
+<b>How do I cite Armadillo in my work&nbsp;?</b>
+<br>
+Please cite the following article if you use Armadillo in your research and/or software:
+<p>
+</p><ul>
+<font size="-1">
+Conrad Sanderson and Ryan Curtin.
+<br><i><a href="http://arma.sourceforge.net/armadillo_joss_2016.pdf">Armadillo: a template-based C++ library for linear algebra</a></i>.
+<br>Journal of Open Source Software, Vol.&nbsp;1, pp.&nbsp;26, 2016.
+</font>
+</ul>
+<p></p>
+Citations are useful for the continued development and maintenance of the library. 
+</li>
+<p></p>
+</ul>
+<br>
+
+<hr class="greyline">
+<a name="license"></a>
+<br>
+<b>License</b>
+<ul>
+<p>
+</p><li>
+<b>What is the license for Armadillo&nbsp;?</b>
+<br>
+Armadillo is available as open source, using the <a href="http://mozilla.org/MPL/2.0/">Mozilla Public License (MPL) 2.0</a>.
+<br>See also Mozilla's <a href="http://www.mozilla.org/en-US/MPL/2.0/FAQ/">FAQ about the license</a>.
+</li>
+<p></p>
+</ul>
+<br>
+
+<hr class="greyline">
+<a name="linking"></a>
+<br>
+<b>Linking</b>
+<ul>
+<p>
+</p><li><b>I'm getting lots of unresolved symbols during compilation</b>
+<br>
+Use the CMake installer to install Armadillo as described in the <i>README.txt</i> file.
+<br>Then link your programs with the armadillo run-time library:
+<pre>g++ prog.cpp -o prog -O2 -larmadillo
+</pre>
+<p></p>
+<p>
+</p></li><li><b>What does the Armadillo run-time library do&nbsp;?</b>
+<br>
+The Armadillo run-time library is generated by the CMake installer
+and is a wrapper for all the relevant libraries present on your system,
+such as OpenBLAS, LAPACK, BLAS, ARPACK, SuperLU, ATLAS.
+On Linux-based systems it also provides a C++11 thread-safe random number generator.
+</li>
+<p></p>
+<p>
+</p><li><b>How can I link directly with BLAS and LAPACK without using the Armadillo run-time library&nbsp;?</b>
+<br>
+Define <i><code>ARMA_DONT_USE_WRAPPER</code></i> before including the armadillo header.
+For example:
+<ul>
+<pre>#define ARMA_DONT_USE_WRAPPER
+#include &lt;armadillo&gt;
+</pre>
+</ul>
+or, if you're using gcc or clang, you can declare the define directly on the command line:
+<ul>
+<br>
+<i>
+<small>
+g++ prog.cpp -o prog -O2 -I /home/blah/armadillo-6.200.4/include -DARMA_DONT_USE_WRAPPER -lblas -llapack
+</small>
+</i>
+<br>
+<br>
+<li>On Mac OS X, replace <i><code>-llapack -lblas</code></i> with <i><code>-framework Accelerate</code></i></li>
+<li>You can link with high-speed <a href="http://xianyi.github.com/OpenBLAS/">OpenBLAS</a> instead of standard BLAS
+by changing <i><code>-lblas&nbsp;-llapack</code></i> to <i><code>-lopenblas&nbsp;-llapack</code></i>
+</li>
+</ul>
+<p></p>
+<p>
+</p></li><li><b>Can I use Armadillo as a pure template library&nbsp;?</b>
+<br>
+Yes. See the answer to the previous question.
+<p></p>
+<p>
+</p></li><li><b>Can I use Armadillo without LAPACK and BLAS&nbsp;?</b>
+<br>Basic functionality will be available (eg. matrix addition and multiplication),
+but things like eigen decomposition will not be.
+Matrix multiplication (mainly for big matrices) may not be as fast.
+</li>
+<p></p>
+<p>
+</p><li><b>Where do I get LAPACK, BLAS, etc&nbsp;?</b>
+<ul>
+<li>
+For Linux-based systems (eg. Fedora and Ubuntu) pre-built OpenBLAS, LAPACK, BLAS and ATLAS packages are available.
+You need to explicitly install them before installing Armadillo.
+Make sure you also install the related development packages (which contain header files).
+</li>
+<li>
+Mac OS X comes with the Accelerate framework, which is an optimised implementation of BLAS and LAPACK.
+The CMake installer can make use of the Accelerate framework by default.
+</li>
+<li>
+For Windows systems, Armadillo comes with pre-compiled 64 bit versions of standard LAPACK and BLAS.
+See the <a href="http://arma.sourceforge.net/download.html">download page</a> for more info.
+</li>
+<a name="blas_lapack_replacements"></a>
+</ul>
+</li>
+<p></p>
+<p>
+</p><li><b>Can I use high-speed LAPACK and BLAS replacements
+(eg.
+<a href="http://xianyi.github.com/OpenBLAS/">OpenBLAS</a>,
+Intel <a href="http://software.intel.com/en-us/intel-mkl/">MKL</a>,
+AMD <a href="http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml/">ACML</a>)&nbsp;?</b>
+<br>
+Yes. The CMake installer should figure out they are available on your system.
+Otherwise, you can directly link with such libraries -- see answers to previous questions.
+</li>
+<p></p>
+</ul>
+<br>
+
+<hr class="greyline">
+<a name="speed"></a>
+<br>
+<b>Speed</b>
+<ul>
+<p>
+</p><li><b>Is automatic SIMD vectorisation supported (eg. SSE2)&nbsp;?</b>
+<br>Yes. As of version 3.900, elementary expressions (eg. matrix addition, multiplication by scalar)
+can be vectorised into <a href="http://en.wikipedia.org/wiki/SSE2">SSE2</a> instructions when using GCC 4.7+ with <i><code>-O3</code></i> optimisation.
+For example, compile your code using:
+<pre>g++ prog.cpp -o prog -O3 -larmadillo 
+</pre>
+To get further speedups
+(ie. to use
+<a href="http://en.wikipedia.org/wiki/SSE3">SSE3</a>,
+<a href="http://en.wikipedia.org/wiki/SSE4">SSE4</a>,
+or
+<a href="http://en.wikipedia.org/wiki/Advanced_Vector_Extensions">AVX</a>
+instructions),
+or to enable SSE2 on 32 bit machines,
+add the <i><code>-march=native</code></i> option.
+For example:
+<pre>g++ prog.cpp -o prog -O3 -march=native -larmadillo
+</pre>
+</li>
+<p></p>
+<p>
+</p><li><b>How fast is Armadillo's matrix multiplication&nbsp;?</b>
+<br>
+Armadillo uses BLAS for matrix multiplication, meaning the speed is dependent on the implementation of BLAS.
+You can use high-speed BLAS replacements to obtain considerably higher performance,
+such as the multi-threaded (parallelised)
+<a href="http://xianyi.github.com/OpenBLAS/">OpenBLAS</a>,
+or <a href="http://software.intel.com/en-us/intel-mkl/">Intel MKL</a>,
+or <a href="http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml/">AMD ACML</a>.
+<!--<a href="http://sourceforge.net/projects/math-atlas/">ATLAS</a>-->
+Under Mac OS X, the Accelerate framework can be used.
+If no BLAS library is available, Armadillo will use its built-in matrix multiply,
+which is generally fast enough for small and medium sized matrices.
+See also <a href="http://arma.sourceforge.net/faq.html#blas_lapack_replacements">how to use BLAS replacements</a>.
+</li>
+<p></p>
+<p>
+</p><li><b>How fast is Armadillo's eigen decomposition, matrix inversion, etc&nbsp;?</b>
+<br>
+Armadillo uses LAPACK for various matrix decompositions and factorisations,
+meaning the speed is dependent on the implementation of LAPACK and/or BLAS.
+You can use high-speed LAPACK and BLAS replacements to obtain considerably higher performance,
+such as the multi-threaded 
+<a href="http://xianyi.github.com/OpenBLAS/">OpenBLAS</a>,
+or <a href="http://software.intel.com/en-us/intel-mkl/">Intel MKL</a>,
+or <a href="http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml/">AMD ACML</a>.
+Under Mac OS X, the Accelerate framework can be used.
+See also <a href="http://arma.sourceforge.net/faq.html#blas_lapack_replacements">how to use LAPACK replacements</a>.
+</li>
+<p></p>
+<p>
+</p><li><b>Can I use Armadillo with a GPU or OpenCL to speed up large matrix multiplications?</b>
+<br>
+Yes. You can link with NVIDIA <a href="http://docs.nvidia.com/cuda/nvblas/">NVBLAS</a> which is a GPU-accelerated implementation of BLAS,
+or with AMD <a href="http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml/">ACML</a> which will take advantage of GPUs through OpenCL.
+</li>
+<p></p>
+</ul>
+<br>
+
+<hr class="greyline">
+<a name="development"></a>
+<br>
+<b>Development</b>
+<ul>
+<p>
+</p><li><b>Who are the developers&nbsp;?</b>
+<br>
+Lead development is done by <a href="http://conradsanderson.id.au/">Conrad Sanderson</a> with help from <a href="http://ratml.org/">Ryan Curtin</a>.
+</li>
+<p></p>
+<p>
+</p><li><b>Can you implement features on request&nbsp;?</b>
+<br>
+Sorry, no.  If you'd like to see a feature in Armadillo, please submit a patch.
+The contributed code must have accompanying tests and user documentation.
+<!--
+<br>
+Feature requests can be made if you purchase a <a href="#commercial_license">commercial license</a>.
+-->
+</li>
+<p></p>
+<!--
+<p>
+<li><b>Do you accept patches&nbsp;?</b>
+<br>
+Contribution of patches is welcome, provided they are cleanly written, tested, and have accompanying documentation.
+Please first describe what you'd like to contribute by sending <a href="http://conradsanderson.id.au">an email</a>.
+</li>
+</p>
+-->
+</ul>
+<br>
+
+<hr class="greyline">
+<a name="features"></a>
+<br>
+<b>Features / Functions</b>
+<ul>
+<p>
+</p><li><b>I can't find my favourite function in the <a href="http://arma.sourceforge.net/docs.html">documentation</a>.  Where is it&nbsp;?</b>
+<br>If it's not in the documentation, it doesn't exist.
+See also the answers to <a href="http://arma.sourceforge.net/faq.html#development">development</a> questions.
+</li>
+<p></p>
+<p>
+</p><li><b>I'm using an Armadillo package that comes with Ubuntu/Debian/Fedora/SUSE, and a lot of functions appear to be missing.</b>
+<br>Armadillo packages that come with Linux distributions can be outdated.
+You can manually upgrade to the <a href="http://arma.sourceforge.net/download.html">latest version</a>.
+</li>
+<p></p>
+<p>
+</p><li><b>Can Armadillo make use of C++11 features&nbsp;?</b>
+<br>Yes. Armadillo will enable extra features (such as move constructors) when a C++11 compiler is detected.
+You may need to explicitly enable C++11 mode in your compiler (eg. <i>-std=c++11</i> in gcc &amp; clang). 
+</li>
+<p></p>
+<p>
+</p><li><b>Can I use the C++11 <i>auto</i> keyword with Armadillo objects and/or expressions?</b>
+<br>Use of C++11 <i>auto</i> is not recommended with Armadillo objects and expressions.
+Armadillo has a template meta-programming framework which creates lots of short lived temporaries that are not handled by <i>auto</i>.
+</li>
+<p></p>
+<p>
+</p><li><b>Is Armadillo a C++11 only library&nbsp;?</b>
+<br>No. Armadillo will work with compilers supporting the older C++98 and C++03 standards, as well as the newer C++11 and C++14 standards.  
+</li>
+<p></p>
+<p>
+</p><li><b>Is there support for fixed size (static size) matrices&nbsp;?</b>
+<br>Yes.  See the documentation for <a href="http://arma.sourceforge.net/docs.html#adv_constructors_mat">advanced matrix constructors</a>.
+Use of fixed size matrices can help the compiler to optimise.
+Use of fixed size matrices is in general recommended only for small matrices (eg. &#8804; 10x10, or &#8804; 100 elements).
+</li>
+<p></p>
+<p>
+</p><li><b>Is there support for sparse matrices&nbsp;?</b>
+<br>Yes. As of version 3.4, there is preliminary support for sparse matrices.
+Sparse matrices are stored in <i>compressed sparse column</i> format via the <a href="http://arma.sourceforge.net/docs.html#SpMat">SpMat</a> class.
+Furthermore, dense matrix multiplication and inversion involving <a href="http://arma.sourceforge.net/docs.html#diagmat">diagonal matrices</a>
+takes into account sparsity (in order to reduce computation).
+</li>
+<p></p>
+<p>
+</p><li><b>Does Armadillo take into account possible aliasing&nbsp;?</b>
+<br>Yes. Armadillo checks for aliasing wherever it's possible to do so.
+In normal usage of the library this means aliasing is always checked.
+However, if you're evil enough you can always construct an artificial case to defeat any alias checking mechanism;
+in particular, if you construct matrices using <a href="http://arma.sourceforge.net/docs.html#adv_constructors_mat">writeable auxiliary memory</a> (externally managed memory),
+your code will be responsible for taking care of possible aliasing.
+</li>
+<p></p>
+<p>
+</p><li><b>Is it possible to interface Armadillo with other libraries&nbsp;?</b>
+<br>Yes.  This can be done by creating matrices (or cubes) that use <a href="http://arma.sourceforge.net/docs.html#Mat">auxiliary memory</a>,
+or by accessing elements through STL-style <a href="http://arma.sourceforge.net/docs.html#iterators_mat">iterators</a>,
+or by directly obtaining a pointer to matrix memory via the <a href="http://arma.sourceforge.net/docs.html#memptr">.memptr()</a> function.
+</li>
+<p></p>
+<p>
+</p><li><b>Is it possible to use Armadillo matrices with user-defined/custom element types&nbsp;?</b>
+<br>Armadillo supports matrices with the following element types:
+<i>float</i>, <i>double</i>, <i>std::complex&lt;float&gt;</i>, <i>std::complex&lt;double&gt;</i>, <i>short</i>, <i>int</i>, <i>long</i>, and unsigned versions of <i>short</i>, <i>int</i>, <i>long</i>.
+Support for other types is beyond the scope of Armadillo.
+</li>
+<p></p>
+<p>
+</p><li><b>Is it possible to use Armadillo from other languages&nbsp;?</b>
+<br>
+<ul>
+<li>
+Thomas Natschlaeger has provided <a href="http://sourceforge.net/projects/armanpy/">bindings/interface to Python</a>
+</li>
+<li>There is a nice interface to R,
+via the <a href="http://dirk.eddelbuettel.com/code/rcpp.armadillo.html">RcppArmadillo</a> extension.
+See also the paper <i><a href="http://arma.sourceforge.net/rcpp_armadillo_csda_2014.pdf">RcppArmadillo: Accelerating R with high-performance C++ linear algebra</a></i>.
+</li>
+<li>
+Sebastian Niemann has written <a href="https://github.com/SebastianNiemann/ArmadilloJava">ArmadilloJava</a>, which provides syntax similar to Armadillo in Java
+</li>
+</ul>
+</li>
+<p></p>
+<p>
+</p><li><b>Is the API stable&nbsp;?</b>
+<br>Yes, within each major version.
+<br>
+<br>
+Long answer:
+<br>
+Armadillo's version number is <i>A.B.C</i>, where <i>A</i> is a major version, <i>B</i> is a minor version, and <i>C</i> is the patch level (indicating bug fixes).
+<br>
+<br>
+Within each major version (eg. 4.x), minor versions with an even number (ie. evenly divisible by two) are backwards compatible with earlier even minor versions.
+For example, code written for version 4.000 will work with version 4.100, 4.120, 4.200, etc.
+However, as each minor version may have more features (ie. API extensions) than earlier versions,
+code specifically written for version 4.100 doesn't necessarily work with 4.000.
+<br>
+<br>
+Experimental versions are denoted by an odd minor version number (ie. not evenly divisible by two), such as 4.199.
+Experimental versions are generally faster and/or have more functionality,
+but their APIs have not been finalised yet (though the likelihood of APIs changes is quite low).
+<br>
+<br>
+We don't like changes to existing APIs and strongly prefer not to break any user software.
+However, to allow evolution, we reserve the right to alter the APIs in future <i>major</i> versions of Armadillo
+while remaining backwards compatible in as many cases as possible
+(eg. version 5.x may have slightly different APIs than 4.x).
+In a rare instance the user API may need to be tweaked if a bug fix absolutely requires it.
+<br>
+<br>
+This policy is applicable to the APIs described in the <a href="http://arma.sourceforge.net/docs.html">documentation</a>;
+it is not applicable to internal functions (ie. the underlying internal implementation details may change across consecutive minor versions) 
+</li>
+<p></p>
+</ul>
+<br>
+
+<hr class="greyline">
+<a name="related"></a>
+<br>
+<b>Related Software &amp; Libraries</b>
+<ul>
+<p>
+</p><li><b>Are there open source projects using Armadillo&nbsp;?</b>
+<br>
+Yes. Examples:
+<ul>
+<table style="text-align: left;" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td><a href="http://mlpack.org/">MLPACK</a></td><td>&nbsp;</td><td>fast machine learning library (classification, regression, clustering, etc)</td></tr>
+    <tr><td><a href="http://sourceforge.net/projects/libpca/">libpca</a></td><td>&nbsp;</td><td>principal component analysis library</td></tr>
+    <tr><td><a href="http://sourceforge.net/projects/armanpy/">armanpy</a></td><td>&nbsp;</td><td>Armadillo bindings/interface to Python (NumPy)</td></tr>
+    <tr><td><a href="https://github.com/jonathf/matlab2cpp">matlab2cpp</a></td><td>&nbsp;</td><td>tool for converting Matlab code to Armadillo based C++ code</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td><a href="https://github.com/ramkikannan/nmflibrary">nmflibrary</a></td><td>&nbsp;</td><td>distributed non-negative matrix factorisation</td></tr>
+    <tr><td><a href="http://nicta.github.io/SmartGridToolbox/">SmartGridToolbox</a></td><td>&nbsp;</td><td>Smart Grid simulation library</td></tr>
+    <tr><td><a href="https://github.com/pin3da/gplib">gplib</a></td><td>&nbsp;</td><td>C++ Gaussian process library</td></tr>
+    <tr><td><a href="http://sigpack.sourceforge.net/">SigPack</a></td><td>&nbsp;</td><td>C++ signal processing library</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td><a href="http://arma.sourceforge.net/foreground/">foreground</a></td><td>&nbsp;</td><td>robust foreground estimation / background subtraction algorithm</td></tr>
+    <tr><td><a href="http://code.google.com/p/groupsac/">groupsac</a></td><td>&nbsp;</td><td>algorithm for geometric vision problems</td></tr>
+    <tr><td><a href="http://sites.google.com/site/hejunzz/grasta">GRASTA</a></td><td>&nbsp;</td><td>low rank subspace object tracking</td></tr>
+    <tr><td><a href="http://arma.sourceforge.net/background_est/">background_est</a></td><td>&nbsp;</td><td>clean background estimation from cluttered scenes</td></tr>
+    <!--<tr><td><a href="https://orion.toffyrn.net/trac/physics">toffyrn::physics</a></td><td>&nbsp;</td><td>tools for computational physics</td></tr>-->
+    <tr><td>&nbsp;</td></tr>
+    <tr><td><a href="http://code.google.com/p/erkale/">ERKALE</a></td><td>&nbsp;</td><td>quantum chemistry</td></tr>
+    <tr><td><a href="http://www.lem3.fr/chemisky/smartplus/">SMART+</a></td><td>&nbsp;</td><td>analysis of mechanics of materials</td></tr>
+    <tr><td><a href="http://code.google.com/p/libdynamica/">libdynamica</a></td><td>&nbsp;</td><td>numerical methods used in physics</td></tr>
+    <tr><td><a href="http://ecocpak.sourceforge.net/">ECOC PAK</a></td><td>&nbsp;</td><td>error correcting output codes</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td><a href="https://github.com/lukemetz/Neural-Net-Experiments">NeuralNet</a></td><td>&nbsp;</td><td>GPU / CPU implementation of a feed forward neural network</td></tr>
+    <tr><td><a href="http://avrsystem.sourceforge.net/">AVRS</a></td><td>&nbsp;</td><td>acoustic virtual reality system</td></tr>
+    <tr><td><a href="https://github.com/jstraub/bnp">bnp</a></td><td>&nbsp;</td><td>inference in a hierarchical Dirichlet process model</td></tr>
+    <tr><td><a href="http://kl1p.sourceforge.net/">KL1p</a></td><td>&nbsp;</td><td>compressed sensing / sparse coding</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td><a href="http://gadgetron.sourceforge.net/">Gadgetron</a></td><td>&nbsp;</td><td>medical image reconstruction</td></tr>
+    <tr><td><a href="http://code.google.com/p/molotov/">molotov</a></td><td>&nbsp;</td><td>motif locator (genetics)</td></tr>
+    <tr><td><a href="http://cs.ru.nl/~wmegchel/optGpSampler/">OptGpSampler</a></td><td>&nbsp;</td><td>sampling genome-scale metabolic networks</td></tr>
+    <tr><td><a href="http://urr.cat/GStream/">GStream</a></td><td>&nbsp;</td><td>genetics (SNP and CNV genotyping)</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td><a href="http://github.com/VespucciProject/Vespucci">Vespucci</a></td><td>&nbsp;</td><td>tool for spectroscopic data analysis and imaging</td></tr>
+    <tr><td><a href="http://gnss-sdr.org/">GNSS-SDR</a></td><td>&nbsp;</td><td>global navigation satellite system receiver</td></tr>
+    <tr><td><a href="http://flow123d.github.io/">Flow123d</a></td><td>&nbsp;</td><td>simulator of underground water flow</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td><a href="https://github.com/dme65/SOT">SOT</a></td><td>&nbsp;</td><td>surrogate based optimization algorithms</td></tr>
+    <tr><td><a href="http://codem.group.shef.ac.uk/index.php/liger">liger</a></td><td>&nbsp;</td><td>integrated optimisation environment</td></tr>
+    <!--<tr><td><a href="https://pypi.python.org/pypi/cyarma">cyarma</a></td><td>&nbsp;</td><td>alternate Armadillo bindings/interface to Python (NumPy)</td></tr>-->
+    <tr><td><a href="http://cran.r-project.org/web/packages/RcppArmadillo/">RcppArmadillo</a></td><td>&nbsp;</td><td>bridge between R and Armadillo, on which 200+ other packages depend</td></tr>
+  </tbody>
+</table>
+</ul>
+</li>
+<p></p>
+<p>
+</p><li><b>How is Armadillo related to uBLAS (part of Boost)&nbsp;?</b>
+<br>
+Armadillo and uBLAS use similar template techniques to handle multi matrix expressions.
+While uBLAS (currently) has more matrix types, Armadillo has considerably more accessible syntax (ie. easier to use).
+Furthermore, Armadillo provides an efficient wrapper to the LAPACK and ATLAS libraries,
+thereby providing functionality and machine-dependent optimisations not present in uBLAS (eg. matrix inversion).
+</li>
+<p></p>
+<p>
+</p><li><b>How is Armadillo related to IT++&nbsp;?</b>
+<br>
+IT++ does not use delayed evaluation, thereby becoming inefficient (slow) for multi matrix expressions or when handling sub-matrices.
+Furthermore, IT++ is licensed under the GPL without any exceptions, meaning that your code becomes "infected" with the GPL
+-- this is an issue when developing proprietary/commercial applications.
+Lastly, Armadillo has a more thorough treatment of vectors.
+</li>
+<p></p>
+<p>
+</p><li><b>How is Armadillo related to Newmat&nbsp;?</b>
+<br>
+Newmat has (currently) more matrix types, but does not handle delayed evaluation as well.
+Newmat's handling of sub-matrices is also relatively slow.
+Newmat has no provision to use LAPACK or ATLAS, which affects speed.
+</li>
+<p></p>
+</ul>
+<br>
+
+<hr class="greyline">
+<a name="misc"></a>
+<br>
+<b>Miscellaneous</b>
+<ul>
+<p>
+</p><li><b>Are there code examples&nbsp;?</b>
+<br>See "examples/example1.cpp" which comes with the Armadillo archive.
+See also the code snippets within the <a href="http://arma.sourceforge.net/docs.html">documentation</a>,
+including the <a href="http://arma.sourceforge.net/docs.html#example_prog">short example program</a>.
+</li>
+<p></p>
+<p>
+</p><li><b>How can I do ...&nbsp;?</b>
+<br>
+Check the <a href="http://arma.sourceforge.net/docs.html">documentation</a>
+and/or the <i>README.txt</i> file that comes with the Armadillo archive.
+</li>
+<p></p>
+<p>
+</p><li><b>Is it possible to plot Armadillo data directly from C++ ?</b>
+<br>Yes. Try
+<a href="http://code.google.com/p/gnuplot-cpp/">gnuplot-cpp</a>, 
+<a href="http://www.stahlke.org/dan/gnuplot-iostream/">gnuplot-iostream</a>,
+<a href="http://www.stahlke.org/dan/scopemm/">scopemm</a>.
+</li>
+<p></p>
+<p>
+</p><li><b>What was the motivation for Armadillo&nbsp;?</b>
+<br>
+Armadillo was originally developed as part of a <a href="http://en.wikipedia.org/wiki/NICTA">NICTA</a> computer vision R&amp;D project,
+in order the provide a solid backbone for computationally intensive experimentation,
+while at the same time allowing for relatively painless transition of research code into production environments
+(ie. translation of Matlab code to C++).
+Previous development frameworks and libraries were unsuitable due to limitations
+in terms of speed, features, licensing, coherency, or being unnecessarily difficult to use.
+</li>
+<p></p>
+<p>
+</p><li><b>Are there other open source projects associated with NICTA&nbsp;?</b>
+<br>
+See <a href="http://opennicta.com.au/">OpenNICTA.com.au</a>
+</li>
+<p></p>
+</ul>
+</div>
+
+<!-- CONTENT END -->
+
+<br>
+<br>
+
+<div id="arma_sf_line"><a href="http://sourceforge.net/projects/arma"><img style="opacity: 0.05; filter: alpha(opacity=5);" src="./Armadillo_ C++ linear algebra library_files/sflogo.php" alt="sourceforge" height="15" width="80"></a></div>
+
+</div>
+
+
+
+</body></html>
