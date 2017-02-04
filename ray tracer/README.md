@@ -1,42 +1,24 @@
-****************************************************
- Worklog
-****************************************************
-Tinnei 10/17:
-	File editted: main.cpp, scene.cpp, film.cpp, MakeFile, README
-	main.cpp: initialize scene
-	scene.cpp: loop through pixels, display and output result
-	film: display and output result (honestly this is so unneccessary for the moment)
 
-David 10/17:
-    main.cpp takes in input text file from ../input/input.txt and parses the inputs
-    
-    Everything compiles now. Added Intersection.h, Boundary.h, Intersection.h, and Light.h and fixed Shape.h
-    
-    Vectors.h contains both vectors and rays
-    Shape.h contains shapes sphere and triangle
-    
+Initially implemented using OpenCV which outputs jpg images. But the school instructional machines did not have OpenCV installed and since students do not have sudo access to download software on instructional machines, we used CImg which outputs ppm images.
+
+
 ****************************************************
 Files
 ****************************************************
     c++
-        camera.cpp
-		film.cpp
         main.cpp
-		Matrices.cpp
-		primitive.cpp
-		raytracer.cpp
-		sampler.cpp
-		scene.cpp
+        objReader.cpp
+        Matrices.cpp
         
     headers
         Boundary.h
+        Camera.h
+        Colors.h
         Light.h
         Vectors.h
         Shape.h
         Material.h
         Matrices.h
-        Intersection.h
-        Colors.h
 
 ****************************************************
 Build Instructions
@@ -48,6 +30,7 @@ Build Instructions
 	4) cmake ..
 	5) make 
 	6) ./as2 ../input/input.txt
+
 
 ****************************************************
  Flow
@@ -61,6 +44,14 @@ Build Instructions
 Inside Raytracer class, it asks Primitive to compute the nearest ray-object intersection. Then it shades that pixel, or recursively create mirror reflection ray and call itself.
 Then it returns the resulting color to scene. Primitive will transform the ray from world space to object space and hand it to Shape to do intersection in object space.
 Shape then computes the intersection and returns the result to Primitive.
+
+****************************************************
+Images
+****************************************************
+![alt text][reflection]
+
+[reflection]: https://github/dkoh12/graphics/blob/master/ray%20tracer/output/input1_output.jpg "Reflection"
+
 
 ****************************************************
  Source Credit: 
