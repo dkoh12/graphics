@@ -52,6 +52,9 @@ Images
 
 [reflection]: https://github.com/dkoh12/graphics/blob/master/ray%20tracer/output/input1_output.jpg "Reflection"
 
+![alt text][spheres]
+
+[spheres]: https://github.com/dkoh12/graphics/blob/master/ray%20tracer/output/lineuptest_output.jpg "Line Up Test"
 
 ****************************************************
  Source Credit: 
