@@ -50,7 +50,7 @@ Images
 ****************************************************
 ![alt text][reflection]
 
-[reflection]: https://github/dkoh12/graphics/blob/master/ray%20tracer/output/input1_output.jpg "Reflection"
+[reflection]: https://github.com/dkoh12/graphics/blob/master/ray%20tracer/output/input1_output.jpg "Reflection"
 
 
 ****************************************************
